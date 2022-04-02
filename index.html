@@ -10,7 +10,46 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <button type="button" class="btn btn-primary new-book rounded-circle m-5" data-toggle="modal" data-target="#bookForm">
+        +
+    </button>
+
+    <div class="modal fade" id="bookForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add a new book</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form id="book-form">
+                    <div class="form-group">
+                      <label for="bookTitle">Title</label>
+                      <input type="text" class="form-control" id="bookTitle">
+                    </div>
+                    <div class="form-group">
+                      <label for="bookAuthor">Author</label>
+                      <input type="text" class="form-control" id="bookAuthor">
+                    </div>
+                    <div class="form-group">
+                        <label for="pages">Pages</label>
+                        <input type="number" class="form-control" id="pages">
+                      </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="isRead">
+                      <label class="form-check-label" for="isRead">Did you read it?</label>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary submit" data-dismiss="modal">Submit book</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
