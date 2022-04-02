@@ -1,4 +1,6 @@
-let myLibrary = [new Book('LOTR', 'JRR', 100, false), new Book('LOTR', 'JRR', 100, false), new Book('LOTR', 'JRR', 100, false)];
+let myLibrary = [new Book('Eloquent JavaScript, Third Edition', 'Marijn Haverbeke', 472, false), 
+new Book('Speaking JavaScript', 'Axel Rauschmayer', 460, true), 
+new Book("You Don't Know JS Yet", 'Kyle Simpson', 143, false)];
 
 function Book(title, author, pages, isRead) {
     this.title = title;
